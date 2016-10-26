@@ -20,11 +20,17 @@
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4xs-Ea-S2j">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             </scrollView>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="sMD-QS-oGP">
+                                <rect key="frame" x="281" y="282" width="37" height="37"/>
+                                <color key="color" red="0.25882352939999997" green="0.52156862749999999" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="4xs-Ea-S2j" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="3qk-f9-IFg"/>
+                            <constraint firstItem="sMD-QS-oGP" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="H7Z-8k-aH1"/>
                             <constraint firstItem="4xs-Ea-S2j" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="JxS-oy-ezU"/>
+                            <constraint firstItem="sMD-QS-oGP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="MRh-lV-9Sr"/>
                             <constraint firstItem="4xs-Ea-S2j" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="XYA-gg-PJg"/>
                             <constraint firstAttribute="trailing" secondItem="4xs-Ea-S2j" secondAttribute="trailing" id="y4p-Mr-J3A"/>
                         </constraints>
@@ -32,6 +38,7 @@
                     <navigationItem key="navigationItem" id="or6-sk-wog"/>
                     <connections>
                         <outlet property="scrollView" destination="4xs-Ea-S2j" id="FkH-26-Wb1"/>
+                        <outlet property="spinner" destination="sMD-QS-oGP" id="Ni0-F1-lVv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
