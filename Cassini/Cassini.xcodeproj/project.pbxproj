@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		271A805C1DC0784400C5976F /* CassiniViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271A805B1DC0784400C5976F /* CassiniViewController.swift */; };
 		27B93D761DC049F80058100C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B93D751DC049F80058100C /* AppDelegate.swift */; };
 		27B93D7B1DC049F80058100C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27B93D791DC049F80058100C /* Main.storyboard */; };
 		27B93D7D1DC049F80058100C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27B93D7C1DC049F80058100C /* Assets.xcassets */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		271A805B1DC0784400C5976F /* CassiniViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CassiniViewController.swift; sourceTree = "<group>"; };
 		27B93D721DC049F80058100C /* Cassini.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cassini.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		27B93D751DC049F80058100C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		27B93D7A1DC049F80058100C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -56,6 +58,7 @@
 		27B93D741DC049F80058100C /* Cassini */ = {
 			isa = PBXGroup;
 			children = (
+				271A805B1DC0784400C5976F /* CassiniViewController.swift */,
 				27B93D881DC04A800058100C /* ImageViewController.swift */,
 				27B93D791DC049F80058100C /* Main.storyboard */,
 				27B93D811DC049F80058100C /* Info.plist */,
@@ -149,6 +152,7 @@
 				27B93D891DC04A800058100C /* ImageViewController.swift in Sources */,
 				27B93D761DC049F80058100C /* AppDelegate.swift in Sources */,
 				27B93D8B1DC04B980058100C /* DemoURL.swift in Sources */,
+				271A805C1DC0784400C5976F /* CassiniViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -298,6 +302,7 @@
 				27B93D861DC049F80058100C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
