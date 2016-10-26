@@ -29,13 +29,14 @@
                             <constraint firstAttribute="trailing" secondItem="4xs-Ea-S2j" secondAttribute="trailing" id="y4p-Mr-J3A"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="or6-sk-wog"/>
                     <connections>
                         <outlet property="scrollView" destination="4xs-Ea-S2j" id="FkH-26-Wb1"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="498" y="-71"/>
+            <point key="canvasLocation" x="1310" y="-71"/>
         </scene>
         <!--Split View Controller-->
         <scene sceneID="gqD-Xe-ILa">
@@ -43,7 +44,7 @@
                 <splitViewController id="9cC-d2-CpX" sceneMemberID="viewController">
                     <connections>
                         <segue destination="YQM-pD-Ajk" kind="relationship" relationship="masterViewController" id="Y9Q-8Z-ZMx"/>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="detailViewController" id="DT2-cL-N0n"/>
+                        <segue destination="nXl-MP-M3g" kind="relationship" relationship="detailViewController" id="DT2-cL-N0n"/>
                     </connections>
                 </splitViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SDn-eV-jPl" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -70,7 +71,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                         <state key="normal" title="Earth"/>
                                         <connections>
-                                            <segue destination="BYZ-38-t0r" kind="showDetail" identifier="Show Image" id="Tjp-5K-akG"/>
+                                            <segue destination="nXl-MP-M3g" kind="showDetail" identifier="Show Image" id="Tjp-5K-akG"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ll5-D3-y2Y">
@@ -78,7 +79,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                         <state key="normal" title="Cassini"/>
                                         <connections>
-                                            <segue destination="BYZ-38-t0r" kind="showDetail" identifier="Show Image" id="KW0-3I-eSf"/>
+                                            <segue destination="nXl-MP-M3g" kind="showDetail" identifier="Show Image" id="KW0-3I-eSf"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gGJ-My-u25">
@@ -86,7 +87,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                         <state key="normal" title="Saturn"/>
                                         <connections>
-                                            <segue destination="BYZ-38-t0r" kind="showDetail" identifier="Show Image" id="IoP-Zj-k4X"/>
+                                            <segue destination="nXl-MP-M3g" kind="showDetail" identifier="Show Image" id="IoP-Zj-k4X"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -122,8 +123,26 @@
             </objects>
             <point key="canvasLocation" x="-314" y="-793"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="hsW-sg-9MY">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="nXl-MP-M3g" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="p77-m6-uWO">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Z4p-zF-jOG"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WvU-h5-2Im" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="498" y="-71"/>
+        </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="KW0-3I-eSf"/>
+        <segue reference="Tjp-5K-akG"/>
     </inferredMetricsTieBreakers>
 </document>
